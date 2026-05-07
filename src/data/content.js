@@ -1,0 +1,186 @@
+const content = {
+  en: {
+    dir: 'ltr',
+    nav: { home: 'Home', about: 'About', skills: 'Skills', experience: 'Experience', projects: 'Projects', contact: 'Contact' },
+    hero: {
+      greeting: 'Hello, I am',
+      name: 'Badraddin',
+      roles: ['Computer Engineer', 'Fullstack Developer', 'System Administrator', 'Embedded Systems Developer'],
+      description: 'Building robust digital solutions from silicon to cloud — crafting code that bridges hardware and software.',
+      cta: 'View My Work',
+      resumeBtn: 'Download CV',
+    },
+    about: {
+      label: 'About Me',
+      title: 'Engineer. Builder. Problem Solver.',
+      p1: 'I am a Computer Engineer with deep expertise spanning the full technology stack — from embedded firmware running on microcontrollers to scalable web applications deployed in the cloud.',
+      p2: 'My passion lies in understanding systems at every level: designing PCB circuits, writing low-level drivers, architecting server infrastructure, and building beautiful user interfaces. This cross-domain knowledge allows me to create solutions that are not just functional, but elegant and efficient.',
+      p3: 'Whether it\'s configuring Linux servers, developing RESTful APIs, building React applications, or programming ARM microcontrollers — I bring the same dedication to quality and performance.',
+      stats: [
+        { value: '5+', label: 'Years Experience' },
+        { value: '30+', label: 'Projects Completed' },
+        { value: '4', label: 'Domains of Expertise' },
+        { value: '∞', label: 'Lines of Code' },
+      ],
+    },
+    skills: {
+      label: 'Skills',
+      title: 'Technical Arsenal',
+      categories: [
+        {
+          icon: '⚡',
+          title: 'Fullstack Development',
+          description: 'End-to-end web application development with modern frameworks and best practices.',
+          skills: ['React.js', 'Node.js', 'Python', 'TypeScript', 'PostgreSQL', 'MongoDB', 'REST APIs', 'GraphQL', 'Docker', 'Git'],
+        },
+        {
+          icon: '🖥️',
+          title: 'System Administration',
+          description: 'Infrastructure management, server deployment, and network security.',
+          skills: ['Linux/Ubuntu', 'Nginx', 'Apache', 'AWS/Cloud', 'CI/CD', 'Bash Scripting', 'Networking', 'Firewall Config', 'Monitoring', 'Virtualization'],
+        },
+        {
+          icon: '🔌',
+          title: 'Embedded Systems',
+          description: 'Firmware development and hardware-software integration for IoT and real-time systems.',
+          skills: ['C/C++', 'ARM Cortex', 'Arduino', 'ESP32', 'RTOS', 'PCB Design', 'I2C/SPI/UART', 'Sensors', 'Motor Control', 'IoT Protocols'],
+        },
+        {
+          icon: '🏗️',
+          title: 'Engineering Tools',
+          description: 'Professional tools and methodologies for quality engineering.',
+          skills: ['MATLAB', 'Simulink', 'KiCad', 'Oscilloscope', 'Logic Analyzer', 'Agile/Scrum', 'Technical Writing', 'Problem Solving', 'CAD', 'Prototyping'],
+        },
+      ],
+    },
+    experience: {
+      label: 'Experience',
+      title: 'Professional Journey',
+      items: [
+        { year: '2024 - Present', role: 'Senior Fullstack Developer', company: 'Tech Company', description: 'Leading development of scalable web applications using React and Node.js. Managing cloud infrastructure on AWS and implementing CI/CD pipelines.' },
+        { year: '2023 - 2024', role: 'System Administrator', company: 'IT Solutions', description: 'Managed Linux server infrastructure, implemented security protocols, and automated deployment workflows with Docker and Kubernetes.' },
+        { year: '2022 - 2023', role: 'Embedded Systems Engineer', company: 'IoT Startup', description: 'Designed and developed firmware for IoT devices using ARM Cortex-M microcontrollers. Implemented communication protocols and sensor integration.' },
+        { year: '2020 - 2022', role: 'Junior Developer', company: 'Software House', description: 'Built web applications and RESTful APIs. Gained experience in database design, version control, and agile development methodologies.' },
+      ],
+    },
+    projects: {
+      label: 'Projects',
+      title: 'Featured Work',
+      filters: ['All', 'Web', 'Embedded', 'DevOps'],
+      items: [
+        { title: 'E-Commerce Platform', category: 'Web', tech: ['React', 'Node.js', 'MongoDB'], description: 'Full-featured online store with payment integration, real-time inventory, and admin dashboard.', link: '#' },
+        { title: 'Smart Home Controller', category: 'Embedded', tech: ['ESP32', 'C++', 'MQTT'], description: 'IoT home automation system with mobile app control, sensor monitoring, and voice assistant integration.', link: '#' },
+        { title: 'CI/CD Pipeline Suite', category: 'DevOps', tech: ['Docker', 'Jenkins', 'AWS'], description: 'Automated deployment pipeline with testing, staging, and production environments.', link: '#' },
+        { title: 'Portfolio CMS', category: 'Web', tech: ['React', 'GraphQL', 'PostgreSQL'], description: 'Headless CMS for managing portfolio content with markdown support and image optimization.', link: '#' },
+        { title: 'Industrial Sensor Network', category: 'Embedded', tech: ['ARM', 'LoRa', 'Python'], description: 'Wireless sensor network for industrial monitoring with real-time data visualization dashboard.', link: '#' },
+        { title: 'Server Monitoring Dashboard', category: 'DevOps', tech: ['Grafana', 'Prometheus', 'Linux'], description: 'Real-time server health monitoring with alerting, log aggregation, and performance analytics.', link: '#' },
+      ],
+    },
+    contact: {
+      label: 'Contact',
+      title: 'Get In Touch',
+      description: 'Have a project in mind or want to collaborate? Feel free to reach out.',
+      email: 'badraddin@example.com',
+      social: [
+        { name: 'GitHub', url: 'https://github.com/badraddin', icon: 'github' },
+        { name: 'LinkedIn', url: 'https://linkedin.com/in/badraddin', icon: 'linkedin' },
+        { name: 'Twitter', url: 'https://twitter.com/badraddin', icon: 'twitter' },
+      ],
+      form: { name: 'Your Name', email: 'Your Email', message: 'Your Message', send: 'Send Message' },
+    },
+    footer: { copyright: '© 2025 Badraddin. All rights reserved.', madeWith: 'Built with React & passion.' },
+  },
+  ar: {
+    dir: 'rtl',
+    nav: { home: 'الرئيسية', about: 'عني', skills: 'المهارات', experience: 'الخبرات', projects: 'المشاريع', contact: 'تواصل' },
+    hero: {
+      greeting: 'مرحباً، أنا',
+      name: 'بدرالدين',
+      roles: ['مهندس حاسوب', 'مطور ويب متكامل', 'مدير أنظمة', 'مطور أنظمة مدمجة'],
+      description: 'بناء حلول رقمية متينة من السيليكون إلى السحابة — كتابة أكواد تربط بين العتاد والبرمجيات.',
+      cta: 'استعرض أعمالي',
+      resumeBtn: 'تحميل السيرة الذاتية',
+    },
+    about: {
+      label: 'عني',
+      title: 'مهندس. مطور. حلّال مشاكل.',
+      p1: 'أنا مهندس حاسوب ذو خبرة عميقة تمتد عبر كامل المنظومة التقنية — من البرمجيات المدمجة التي تعمل على المتحكمات الدقيقة إلى تطبيقات الويب القابلة للتوسع المنشورة في السحابة.',
+      p2: 'شغفي يكمن في فهم الأنظمة على كل مستوى: تصميم الدوائر الإلكترونية، كتابة برامج التشغيل منخفضة المستوى، هندسة البنية التحتية للخوادم، وبناء واجهات مستخدم جميلة.',
+      p3: 'سواء كان الأمر يتعلق بإعداد خوادم لينكس، أو تطوير واجهات برمجة التطبيقات، أو بناء تطبيقات React، أو برمجة متحكمات ARM — أحرص دائماً على الجودة والأداء.',
+      stats: [
+        { value: '+5', label: 'سنوات خبرة' },
+        { value: '+30', label: 'مشروع مكتمل' },
+        { value: '4', label: 'مجالات تخصص' },
+        { value: '∞', label: 'سطور برمجة' },
+      ],
+    },
+    skills: {
+      label: 'المهارات',
+      title: 'الترسانة التقنية',
+      categories: [
+        {
+          icon: '⚡',
+          title: 'تطوير الويب المتكامل',
+          description: 'تطوير تطبيقات ويب شاملة باستخدام أحدث الأطر والممارسات.',
+          skills: ['React.js', 'Node.js', 'Python', 'TypeScript', 'PostgreSQL', 'MongoDB', 'REST APIs', 'GraphQL', 'Docker', 'Git'],
+        },
+        {
+          icon: '🖥️',
+          title: 'إدارة الأنظمة',
+          description: 'إدارة البنية التحتية ونشر الخوادم وأمن الشبكات.',
+          skills: ['Linux/Ubuntu', 'Nginx', 'Apache', 'AWS/Cloud', 'CI/CD', 'Bash', 'الشبكات', 'جدار الحماية', 'المراقبة', 'الحوسبة الافتراضية'],
+        },
+        {
+          icon: '🔌',
+          title: 'الأنظمة المدمجة',
+          description: 'تطوير البرمجيات الثابتة والتكامل بين العتاد والبرمجيات.',
+          skills: ['C/C++', 'ARM Cortex', 'Arduino', 'ESP32', 'RTOS', 'تصميم PCB', 'I2C/SPI/UART', 'المستشعرات', 'التحكم', 'بروتوكولات IoT'],
+        },
+        {
+          icon: '🏗️',
+          title: 'أدوات هندسية',
+          description: 'أدوات ومنهجيات احترافية للهندسة عالية الجودة.',
+          skills: ['MATLAB', 'Simulink', 'KiCad', 'أوسيلوسكوب', 'محلل منطقي', 'Agile/Scrum', 'الكتابة التقنية', 'حل المشكلات', 'CAD', 'النمذجة'],
+        },
+      ],
+    },
+    experience: {
+      label: 'الخبرات',
+      title: 'المسيرة المهنية',
+      items: [
+        { year: '2024 - الحالي', role: 'مطور ويب أول', company: 'شركة تقنية', description: 'قيادة تطوير تطبيقات ويب قابلة للتوسع باستخدام React و Node.js. إدارة البنية التحتية السحابية على AWS.' },
+        { year: '2023 - 2024', role: 'مدير أنظمة', company: 'حلول تقنية', description: 'إدارة البنية التحتية لخوادم لينكس، تطبيق بروتوكولات الأمان، وأتمتة سير العمل باستخدام Docker.' },
+        { year: '2022 - 2023', role: 'مهندس أنظمة مدمجة', company: 'شركة إنترنت الأشياء', description: 'تصميم وتطوير البرمجيات الثابتة لأجهزة IoT باستخدام متحكمات ARM Cortex-M.' },
+        { year: '2020 - 2022', role: 'مطور مبتدئ', company: 'شركة برمجيات', description: 'بناء تطبيقات ويب وواجهات برمجة التطبيقات. اكتساب خبرة في تصميم قواعد البيانات ومنهجيات التطوير.' },
+      ],
+    },
+    projects: {
+      label: 'المشاريع',
+      title: 'أعمال مميزة',
+      filters: ['الكل', 'ويب', 'مدمج', 'DevOps'],
+      items: [
+        { title: 'منصة تجارة إلكترونية', category: 'ويب', tech: ['React', 'Node.js', 'MongoDB'], description: 'متجر إلكتروني متكامل مع الدفع والمخزون الفوري ولوحة إدارة.', link: '#' },
+        { title: 'نظام المنزل الذكي', category: 'مدمج', tech: ['ESP32', 'C++', 'MQTT'], description: 'نظام أتمتة منزلي مع تطبيق موبايل ومراقبة المستشعرات.', link: '#' },
+        { title: 'أنابيب CI/CD', category: 'DevOps', tech: ['Docker', 'Jenkins', 'AWS'], description: 'خط نشر آلي مع بيئات الاختبار والإنتاج.', link: '#' },
+        { title: 'نظام إدارة المحتوى', category: 'ويب', tech: ['React', 'GraphQL', 'PostgreSQL'], description: 'نظام إدارة محتوى بدون واجهة مع دعم Markdown.', link: '#' },
+        { title: 'شبكة مستشعرات صناعية', category: 'مدمج', tech: ['ARM', 'LoRa', 'Python'], description: 'شبكة مستشعرات لاسلكية للمراقبة الصناعية مع لوحة بيانات.', link: '#' },
+        { title: 'لوحة مراقبة الخوادم', category: 'DevOps', tech: ['Grafana', 'Prometheus', 'Linux'], description: 'مراقبة صحة الخوادم في الوقت الفعلي مع التنبيهات والتحليلات.', link: '#' },
+      ],
+    },
+    contact: {
+      label: 'تواصل',
+      title: 'تواصل معي',
+      description: 'لديك مشروع أو تريد التعاون؟ لا تتردد في التواصل.',
+      email: 'badraddin@example.com',
+      social: [
+        { name: 'GitHub', url: 'https://github.com/badraddin', icon: 'github' },
+        { name: 'LinkedIn', url: 'https://linkedin.com/in/badraddin', icon: 'linkedin' },
+        { name: 'Twitter', url: 'https://twitter.com/badraddin', icon: 'twitter' },
+      ],
+      form: { name: 'اسمك', email: 'بريدك الإلكتروني', message: 'رسالتك', send: 'إرسال' },
+    },
+    footer: { copyright: '© 2025 بدرالدين. جميع الحقوق محفوظة.', madeWith: 'صُنع بـ React والشغف.' },
+  },
+};
+
+export default content;

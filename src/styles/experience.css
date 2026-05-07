@@ -1,0 +1,60 @@
+.timeline { position: relative; padding: var(--space-xl) 0; }
+.timeline-line {
+  position: absolute; top: 0; bottom: 0;
+  inset-inline-start: 50%; width: 2px;
+  background: linear-gradient(to bottom, transparent, var(--border-accent), var(--border-accent), transparent);
+  transform: translateX(-50%);
+}
+.timeline-item {
+  position: relative; width: 50%;
+  padding: var(--space-md); padding-block-end: var(--space-2xl);
+}
+.timeline-item.left { inset-inline-start: 0; padding-inline-end: var(--space-3xl); }
+.timeline-item.right { inset-inline-start: 50%; padding-inline-start: var(--space-3xl); }
+.timeline-dot {
+  position: absolute; top: var(--space-xl);
+  width: 14px; height: 14px; border-radius: 50%;
+  background: var(--accent-primary); border: 3px solid var(--bg-primary);
+  z-index: 2; animation: pulse-glow 3s infinite;
+}
+.timeline-item.left .timeline-dot { inset-inline-end: -7px; }
+.timeline-item.right .timeline-dot { inset-inline-start: -7px; }
+.timeline-card {
+  background: var(--bg-card); border: 1px solid var(--border-color);
+  border-radius: var(--radius-lg); padding: var(--space-xl);
+  transition: all var(--transition-base);
+}
+.timeline-card:hover {
+  border-color: var(--border-accent); transform: translateY(-4px);
+  box-shadow: var(--shadow-glow);
+}
+.timeline-year {
+  font-family: var(--font-display); font-size: var(--text-xs);
+  color: var(--accent-primary); font-weight: 600;
+  padding: var(--space-xs) var(--space-sm);
+  background: var(--accent-glow); border-radius: var(--radius-sm);
+  display: inline-block; margin-block-end: var(--space-sm);
+}
+.timeline-role {
+  font-size: var(--text-lg); color: var(--text-primary);
+  margin-block-end: var(--space-xs);
+}
+.timeline-company {
+  font-size: var(--text-sm); color: var(--accent-secondary);
+  font-weight: 500; display: block; margin-block-end: var(--space-sm);
+}
+.timeline-desc {
+  font-size: var(--text-sm); color: var(--text-secondary); line-height: 1.7;
+}
+
+@media (max-width: 768px) {
+  .timeline-line { inset-inline-start: 20px; }
+  .timeline-item, .timeline-item.left, .timeline-item.right {
+    width: 100%; inset-inline-start: 0;
+    padding-inline-start: 50px; padding-inline-end: 0;
+  }
+  .timeline-item.left .timeline-dot,
+  .timeline-item.right .timeline-dot {
+    inset-inline-start: 14px; inset-inline-end: auto;
+  }
+}
